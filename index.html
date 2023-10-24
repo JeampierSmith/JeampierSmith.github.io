@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obtener JSON</title>
+</head>
+<body>
+    <ul id="lista"></ul>
+    <button id="obtenerDatos">Obtener Datos</button>
+
+    <script>
+        document.getElementById("obtenerDatos").addEventListener("click", function() {
+           
+            var xhr = new XMLHttpRequest();
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var datos = JSON.parse(xhr.responseText);
+                    mostrarDatosEnLista(datos);
+                }
+            };
+
+            xhr.open("GET", "datos.php", true);
+            xhr.send();
+        });
+
+        function mostrarDatosEnLista(datos) {
+            var lista = document.getElementById("lista");
+
+            lista.innerHTML = "";
+
+            for (var i = 0; i < datos.length; i++) {
+                var listItem = document.createElement("li");
+                listItem.textContent = datos[i];
+                lista.appendChild(listItem);
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

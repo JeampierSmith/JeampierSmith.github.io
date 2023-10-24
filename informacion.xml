@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productos><transaccion><producto>Camisa</producto><precio>20.5</precio><cantidad>2</cantidad><costo_total>41</costo_total></transaccion><transaccion><producto>Camisa</producto><precio>20.5</precio><cantidad>23</cantidad><costo_total>471.5</costo_total></transaccion><transaccion><producto>Camisa</producto><precio>50.5</precio><cantidad>2</cantidad><costo_total>101</costo_total></transaccion><transaccion><producto>Camisa</producto><precio>50.5</precio><cantidad>21</cantidad><costo_total>1060.5</costo_total></transaccion></productos>
